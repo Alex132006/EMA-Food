@@ -330,7 +330,7 @@ body {
     background: var(--color-charcoal);
     color: var(--color-ivory);
     padding: 0.75rem 1.5rem;
-    border-radius: 0;
+    border-radius: 15px 15px;
     font-weight: 400;
     letter-spacing: 0.3px;
 }
@@ -340,6 +340,20 @@ body {
     transform: translateY(-1px);
 }
 
+
+.appoint-btn {
+    background: var(--color-charcoal);
+    color: var(--color-ivory);
+    padding: 0.75rem 1.5rem;
+    border-radius:  15px  15px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+.appoint-btn:hover {
+    background: var(--color-gold);
+    transform: translateY(-1px);
+}
 /* Hero Section Luxueuse */
 .hero-section {
     height: 100vh;
