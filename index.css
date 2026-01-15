@@ -24,25 +24,22 @@
 
 
 /* ===== SECTIONS ET CATÉGORIES ===== */
-section {
+/* section {
     padding: 10px;
     margin: auto;
-}
+} */
 
-.menu-category {
-    /* MODIFIER DANS RESPONSIVE */
+/* .menu-category {
     width: auto;
-}
+} */
 
 .category-title {
     font-size: 25px;
-    /* MODIFIER DANS RESPONSIVE */
     color: #000000;
     border-bottom: 1px solid #dcb40088;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0);
     width: auto;
     padding: 1px;
-    /* MODIFIER DANS RESPONSIVE */
     justify-items: center;
     text-align: center;
     z-index: 1;
@@ -55,26 +52,21 @@ section {
     top: 109px;
     max-width: 1200px;
     margin: -20px auto;
-    /* MODIFIER DANS RESPONSIVE */
     padding: 0 20px;
-    /* MODIFIER DANS RESPONSIVE */
     position: relative;
 }
 
 .pub-carousel-section h2 {
     color: #ffffff;
     font-size: 24px;
-    /* MODIFIER DANS RESPONSIVE */
     font-weight: bold;
     margin-bottom: 30px;
-    /* MODIFIER DANS RESPONSIVE */
     text-align: center;
 }
 
 .carousel-container {
     width: 100%;
     overflow: hidden;
-    /* border-radius: 20px; */
     position: relative;
     background: #fff3e200;
     box-shadow: 0 0 5px 5px #ffee0000;
@@ -84,7 +76,6 @@ section {
     display: flex;
     animation: defilement 30s linear infinite;
     gap: 10px;
-    /* MODIFIER DANS RESPONSIVE */
 }
 
 .carousel-track:hover {
@@ -93,10 +84,8 @@ section {
 
 .carousel-slide {
     flex: 0 0 300px;
-    /* MODIFIER DANS RESPONSIVE */
     height: 200px;
     margin-bottom: 40px;
-    /* MODIFIER DANS RESPONSIVE */
     border-radius: 15px;
     background: #00000000;
     overflow: hidden;
@@ -132,7 +121,6 @@ section {
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.868));
     color: white;
     padding: 20px;
-    /* MODIFIER DANS RESPONSIVE */
     transform: translateY(100%);
     transition: transform 0.3s ease;
 }
@@ -153,9 +141,7 @@ section {
 
 .new-slide {
     width: 60px;
-    /* MODIFIER DANS RESPONSIVE */
     height: 25px;
-    /* MODIFIER DANS RESPONSIVE */
     background: #ff0000;
     color: #ffffff;
     transform: rotate(-20deg);
@@ -168,17 +154,13 @@ section {
     position: absolute;
     top: 1px;
     right: 10px;
-    /* MODIFIER DANS RESPONSIVE */
     z-index: 1000;
     font-size: 12px;
-    /* MODIFIER DANS RESPONSIVE */
 }
 
 .new {
     width: 60px;
-    /* MODIFIER DANS RESPONSIVE */
     height: 20px;
-    /* MODIFIER DANS RESPONSIVE */
     background: #ff0000;
     color: #ffffff;
     transform: rotate(-20deg);
@@ -191,15 +173,12 @@ section {
     position: absolute;
     top: 1px;
     right: 10px;
-    /* MODIFIER DANS RESPONSIVE */
     z-index: 1000;
     font-size: 12px;
-    /* MODIFIER DANS RESPONSIVE */
 }
 
 
 
-/* STYLE Cosmetique */
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -211,6 +190,8 @@ section {
 
 .container {
     padding: 20px 15px;
+    background: #eee;
+    border-radius: 30px;
 }
 
 .menu-item {
