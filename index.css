@@ -36,6 +36,19 @@
 .category-title {
     font-size: 25px;
     color: #000000;
+    border-bottom: 1px solid #dcb400;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0);
+    width: auto;
+    padding: 1px;
+    justify-items: center;
+    text-align: center;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.category-promo {
+    font-size: 25px;
+    color: #ffffff;
     border-bottom: 1px solid #dcb40088;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0);
     width: auto;
@@ -188,9 +201,9 @@
     max-width: 100%;
 }
 
-.container {
+.container-sold {
     padding: 20px 15px;
-    background: #eee;
+    background: #000000;
     border-radius: 30px;
 }
 
