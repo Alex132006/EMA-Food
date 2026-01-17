@@ -265,11 +265,20 @@
 
 .item-title {
     position: relative;
-    top: -20px;
-    font-size: 10px;
+    top: 10px;
+    font-size: 15px;
     text-align: center;
     font-weight: bold;
-    color: #505050;
+    color: #000000;
+}
+
+.item-title-1 {
+    position: relative;
+    top: 0px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 .favorite-btn {
@@ -1178,7 +1187,7 @@ footer {
     }
 
     .item-title {
-        font-size: 12px;
+        font-size: 15px;
         top: 5px;
     }
 
