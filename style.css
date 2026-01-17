@@ -812,11 +812,11 @@ body {
     }
 }
 
-@media (max-width: 428px) {
+@media (max-width: ) {
     .appoint-btn,
         .appointment-btn {
             position: relative;
-            top: -80px;
+            top: -70px;
             left: 110px;
             padding: 0rem 1rem;
         }
