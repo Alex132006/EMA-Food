@@ -812,11 +812,11 @@ body {
     }
 }
 
-@media (max-width: 468px) {
+@media (max-width: 428px) {
     .appoint-btn,
         .appointment-btn {
             position: relative;
-            top: -105px;
+            top: -80px;
             left: 110px;
             padding: 0rem 1rem;
         }
@@ -824,35 +824,4 @@ body {
         .nav-brand {
             margin-left: -180px;
         }
-}
-
-@media (max-width: 468px) {
-    .appoint-btn,
-        .appointment-btn {
-            position: relative;
-            top: -80px;
-            left: 110px;
-            padding: 0rem 1rem;
-        }
-}
-
-@media (max-width: 468px) {
-    .appoint-btn,
-        .appointment-btn {
-            position: relative;
-            top: -80px;
-            left: 110px;
-            padding: 0rem 1rem;
-        }
-}
-
-@media (max-width: 468px) {
-
-    .appoint-btn,
-    .appointment-btn {
-        position: relative;
-        top: -100px;
-        left: 110px;
-        padding: 0rem 1rem;
-    }
 }
