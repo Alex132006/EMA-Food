@@ -812,7 +812,7 @@ body {
     }
 }
 
-@media (max-width: ) {
+/* @media (max-width: 428px) {
     .appoint-btn,
         .appointment-btn {
             position: relative;
@@ -824,4 +824,4 @@ body {
         .nav-brand {
             margin-left: -180px;
         }
-}
+} */
