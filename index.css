@@ -22,7 +22,6 @@
 }
 
 
-
 /* ===== SECTIONS ET CATÉGORIES ===== */
 /* section {
     padding: 10px;
@@ -62,7 +61,7 @@
 /* ===== CAROUSEL ===== */
 .pub-carousel-section {
     position: relative;
-    top: 109px;
+    top: 0px;
     max-width: 1200px;
     margin: -20px auto;
     padding: 0 20px;
@@ -201,10 +200,16 @@
     max-width: 100%;
 }
 
+.container {
+    padding: 20px 15px;
+    background: #d4d4d446;
+    /* border-radius: 30px; */
+}
+
 .container-sold {
     padding: 20px 15px;
     background: #000000;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .menu-item {
