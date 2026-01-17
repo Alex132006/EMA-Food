@@ -351,7 +351,7 @@ body {
     text-decoration: none;
     background: var(--color-charcoal);
     color: var(--color-ivory);
-    padding: 0.75rem 1.5rem;
+    padding: 0.3rem 1rem;
     border-radius: 15px 15px;
     font-weight: 400;
     letter-spacing: 0.3px;
@@ -367,7 +367,7 @@ body {
     text-decoration: none;
     background: var(--color-charcoal);
     color: var(--color-ivory);
-    padding: 0.75rem 1.5rem;
+    padding: 0.3rem 1rem;
     border-radius:  15px  15px;
     font-weight: 400;
     letter-spacing: 0.3px;
