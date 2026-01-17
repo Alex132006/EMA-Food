@@ -203,7 +203,7 @@
 .container {
     padding: 20px 15px;
     background: #d4d4d446;
-    /* border-radius: 30px; */
+    border-radius: 0px;
 }
 
 .container-sold {

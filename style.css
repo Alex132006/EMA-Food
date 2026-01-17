@@ -248,7 +248,6 @@ body {
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--color-border);
     z-index: 90000;
-    
     padding: 1rem 0;
 }
 
