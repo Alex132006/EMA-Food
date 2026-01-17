@@ -783,7 +783,7 @@ body {
         flex-direction: column;
         gap: 1rem;
     }
-    
+
     .nav-menu {
         gap: 1.5rem;
     }
@@ -809,5 +809,50 @@ body {
         flex-direction: column;
         gap: 1rem;
         text-align: center;
+    }
+}
+
+@media (max-width: 468px) {
+    .appoint-btn,
+        .appointment-btn {
+            position: relative;
+            top: -105px;
+            left: 110px;
+            padding: 0rem 1rem;
+        }
+
+        .nav-brand {
+            margin-left: -180px;
+        }
+}
+
+@media (max-width: 468px) {
+    .appoint-btn,
+        .appointment-btn {
+            position: relative;
+            top: -80px;
+            left: 110px;
+            padding: 0rem 1rem;
+        }
+}
+
+@media (max-width: 468px) {
+    .appoint-btn,
+        .appointment-btn {
+            position: relative;
+            top: -80px;
+            left: 110px;
+            padding: 0rem 1rem;
+        }
+}
+
+@media (max-width: 468px) {
+
+    .appoint-btn,
+    .appointment-btn {
+        position: relative;
+        top: -100px;
+        left: 110px;
+        padding: 0rem 1rem;
     }
 }
