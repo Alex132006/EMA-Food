@@ -1,91 +1,4 @@
 // =============================================
-// LOADING SCREEN - Экран загрузки (показывается один раз)
-// =============================================
-window.addEventListener("load", function () {
-  if (!localStorage.getItem("hasSeenLoading")) {
-    const loadingScreen = document.createElement("div");
-    loadingScreen.id = "loading-screen";
-    loadingScreen.innerHTML = `
-            <div class="loading-content">
-                <img src="image copy.png" alt="Логотип Кафе Кастелло Пан Африка" 
-                     class="loading-logo" 
-                     onload="this.style.opacity = '1'">
-                <div class="loading-text">
-                    <h2>добро пожаловать</h2>
-                    <h3>В</h3>
-                    <h1>Кастелло Пан Африка</h1>
-                </div>
-                <div class="spinner"></div>
-                <p class="loading-status">Загрузка меню...</p>
-            </div>
-        `;
-
-    loadingScreen.style.cssText = `
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #442d0a 0%, #d4af37 100%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            color: white;
-            font-family: 'Playfair Display', Georgia, serif;
-            text-align: center;
-            opacity: 1;
-            transition: opacity 0.5s ease-out;
-        `;
-
-    document.body.appendChild(loadingScreen);
-
-    // Предзагрузка критических изображений
-    const criticalImages = [
-      "image copy.png",
-      // Добавьте другие важные изображения
-    ];
-
-    // Счетчик загруженных ресурсов
-    let resourcesLoaded = 0;
-    const images = document.querySelectorAll("img");
-    const totalImages = Math.max(1, images.length);
-
-    // Обновление статуса загрузки
-    function updateLoadingStatus() {
-      resourcesLoaded++;
-      const percent = Math.min(
-        95,
-        Math.round((resourcesLoaded / totalImages) * 100)
-      );
-      const statusEl = document.querySelector(".loading-status");
-      if (statusEl) {
-        statusEl.textContent = `Загрузка... ${percent}%`;
-      }
-    }
-
-    // Отслеживание загрузки изображений
-    images.forEach((img) => {
-      if (img.complete) {
-        updateLoadingStatus();
-      } else {
-        img.addEventListener("load", updateLoadingStatus);
-        img.addEventListener("error", updateLoadingStatus); // Даже при ошибке считаем загруженным
-      }
-    });
-
-    // Минимальное время показа экрана загрузки - 3 секунды
-    setTimeout(function () {
-      loadingScreen.style.opacity = "0";
-      setTimeout(function () {
-        loadingScreen.remove();
-        localStorage.setItem("hasSeenLoading", "true");
-      }, 500);
-    }, 3000);
-  }
-});
-
-// =============================================
 // GLOBAL VARIABLES - Глобальные переменные
 // =============================================
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -212,7 +125,7 @@ function addToCart(name, price, quantity = 1, image) {
     updateCartDisplay();
 
     // Уведомление
-    showNotification(`${normalizedName} добавлен в корзину!`);
+    // showNotification(`${normalizedName} добавлен в корзину!`);
 
     return true;
   } catch (error) {
@@ -296,7 +209,7 @@ function addToFavorites(name, price, image) {
     });
 
     updateFavorites();
-    showNotification(`${normalizedName} добавлен в избранное`);
+    showNotification(`${normalizedName} Ajoute`);
     return true;
   }
   return false;
@@ -383,14 +296,14 @@ function initializeAddToCartButtons() {
       if (addToCart(name, price, 1, image)) {
         // Анимация подтверждения
         const originalHTML = this.innerHTML;
-        this.innerHTML = "✓ Добавлено";
-        this.style.background =
-          "linear-gradient(135deg, hsla(120, 59%, 50%, 0.8), hsla(120, 59%, 40%, 0.8))";
+        this.innerHTML = "✓";
+        this.style.color = "#000000", background =
+          "linear-gradient(135deg, hsla(0, 0%, 0%, 0.80), hsla(0, 0%, 0%, 0.80))";
 
         setTimeout(() => {
           this.innerHTML = originalHTML;
           this.style.background =
-            "linear-gradient(135deg, hsla(62, 59%, 40%, 0.70), hsla(61, 62%, 62%, 0.70))";
+            "linear-gradient(135deg, hsla(0, 0%, 83%, 0.88), hsla(0, 0%, 79%, 0.87))";
         }, 1500);
       }
     });
@@ -411,7 +324,7 @@ function initializeAddToCartButtons() {
           const originalText = this.textContent;
           this.textContent = "✓ Добавлено!";
           this.style.background =
-            "linear-gradient(135deg, hsla(120, 59%, 50%, 0.8), hsla(120, 59%, 40%, 0.8))";
+            "linear-gradient(135deg, hsla(56, 59%, 50%, 0.80), hsla(120, 59%, 40%, 0.8))";
 
           setTimeout(() => {
             this.textContent = originalText;
