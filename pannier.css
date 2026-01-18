@@ -30,7 +30,7 @@
 
 .nav-container {
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 15px auto;
     padding: 0 2rem;
     display: flex;
     justify-content: space-between;
@@ -133,10 +133,11 @@
     letter-spacing: 0.3px;
 }
 
+/* 
 .appointment-btn:hover {
     background: var(--color-gold);
     transform: translateY(-1px);
-}
+} */
 
 
 .appoint-btn {
@@ -149,10 +150,10 @@
     letter-spacing: 0.3px;
 }
 
-.appoint-btn:hover {
+/*.appoint-btn:hover {
     background: var(--color-gold);
     transform: translateY(-1px);
-}
+} */
 
 .contaner {
     max-width: 1200px;
@@ -168,34 +169,36 @@
 
 /* Tabs */
 .cart-tabs {
-    display: flex;
+    position: relative;
+    top: 0%;
+    display: grid;
     justify-content: center;
-    gap: 15px;
-    width: 100%;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .tab-btn {
-    font-weight: bold;
-    max-width: 100px;
-    height: 30px;
-    color: #ffffff;
-    background: rgb(142, 109, 2);
-    border: 1px solid rgb(142, 109, 2);
-    border-radius: 15px;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 0.9rem;
     cursor: pointer;
-    padding: 0 15px;
+    transition: all 0.3s ease;
 }
 
-.tab-btn.active {
-    border: 1px solid rgb(253, 253, 253);
-    background: #d4af37;
-    transform: translateY(-1px);
+.tab-btn {
+    text-decoration: none;
+        background: var(--color-charcoal);
+        color: #ffffff;
+        padding: 1rem 3rem;
+        border-radius: 15px 15px;
+        font-weight: 400;
+        letter-spacing: 0.3px;
 }
 
 .tab-btn:hover {
-    background: #d4af37;
-    color: #fff;
-    transform: translateY(-2px);
+    background: var(--color-gold);
+        transform: translateY(-1px);
 }
 
 /* Cart Content */
@@ -671,57 +674,5 @@
         flex-direction: column;
         gap: 1rem;
         text-align: center;
-    }
-}
-
-@media (max-width: 468px) {
-    .main-nav {
-    position: fixed;
-    top: 0;
-}
-
-    .appoint-btn,
-    .appointment-btn {
-        position: relative;
-        top: -105px;
-        left: 110px;
-        padding: 0rem 1rem;
-    }
-
-    .nav-brand {
-        margin-left: -180px;
-    }
-}
-
-@media (max-width: 468px) {
-
-    .appoint-btn,
-    .appointment-btn {
-        position: relative;
-        top: -80px;
-        left: 110px;
-        padding: 0rem 1rem;
-    }
-}
-
-@media (max-width: 468px) {
-
-    .appoint-btn,
-    .appointment-btn {
-        position: relative;
-        top: -80px;
-        left: 110px;
-        padding: 0rem 1rem;
-    }
-}
-
-@media (max-width: 468px) {
-
-    .appoint-btn,
-    .appointment-btn {
-        position: relative;
-        top: -100px;
-        left: 110px;
-        padding: 0rem 1rem;
     }
 }

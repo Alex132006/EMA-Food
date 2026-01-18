@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Condiment&family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="pannier.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="logo_ema.png">
     <link rel="icon" href="logo_ema.png" type="image/x-icon">
     <link rel="icon" href="logo_ema.png" type="image/png" sizes="any">
@@ -23,30 +24,32 @@
                 <span class="brand-symbol"><i class="fa-solid fa-truck-fast"></i></span>
                 <h3 clrelass="brand-name">EMA & Food</h3>
             </div>
-            
-            <div class="nav-actions">
-                <button class="nav-btn search-btn" aria-label="Recherche">
-                </button>
+
+            <!-- <div class="nav-actions">
                 <button class="nav-btn appointment-btn" data-tab="cart">
                     <i class="fa-solid fa-message"></i>
                 </button>
     
-                <button href="" class="nav-btn appoint-btn" data-tab="favorites">
+                <button class="nav-btn appoint-btn" data-tab="favorites">
                     <i class="fas fa-shopping-cart"></i>
                 </button>
-    
-            </div>
+            </div> -->
     </nav>
 
     <section class="cart-section">
         <div class="container">
-            <h1 class="cart-title"></h1>
-        <!-- <div>
-            <div class="cart-tabs">
-                <button class="tab-btn active" data-tab="cart">Корзина</button>
-                <button class="tab-btn" data-tab="favorites">Избранное</button>
+                <div class="cart-tabs">
+            <div class="nav-actions">
+
+                    <button class="tab-btn active" data-tab="cart">
+                        <i class="fa-solid fa-message"></i>
+                    </button>
+
+                    <button class="tab-btn active" data-tab="favorites">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+
             </div>
-        </div> -->
 
             <div id="cart-content" class="cart-content">
                 <div id="cart-items" class="cart-items">
@@ -120,4 +123,5 @@
 
     <script src="pannier.js"></script>
 </body>
+
 </html>
