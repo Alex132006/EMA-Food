@@ -38,7 +38,7 @@
 }
 
 .nav-brand {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     gap: 0.75rem;
 }

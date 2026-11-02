@@ -21,6 +21,58 @@
     --spacing-xs: 0.5rem;
 }
 
+.barre2 {
+    width: 15px;
+    height: 1px;
+}
+
+.menu-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    left: 0px;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+}
+
+.menu-toggle span {
+    width: 20px;
+    height: 1px;
+    background: #171717;
+    transition: 0.3s;
+}
+
+.menu-panel {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 75px;
+    width: 260px;
+    padding: 25px;
+    background: #171717;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.menu-panel.active {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.menu-panel a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu-panel a:hover {
+    color: #B88A5A;
+}
+
 
 /* ===== SECTIONS ET CATÉGORIES ===== */
 /* section {
@@ -383,7 +435,7 @@ footer {
 
 .footer-column ul li a {
     text-decoration: none;
-    color: #dbdbdb;
+    color: #B88A5A;
     font-size: 14px;
     /* MODIFIER DANS RESPONSIVE */
     transition: color 0.3s;

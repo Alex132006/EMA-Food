@@ -6,6 +6,13 @@ let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 let favoritesCache = null;
 let isFavoriteCache = new Map();
 
+const menuToggle = document.getElementById("menuToggle");
+const menuPanel = document.getElementById("menuPanel");
+
+menuToggle.addEventListener("click", () => {
+    menuPanel.classList.toggle("active");
+});
+
 // =============================================
 // UTILITY FUNCTIONS - Вспомогательные функции
 // =============================================

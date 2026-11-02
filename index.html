@@ -19,25 +19,39 @@
 </head>
 
 <body>
+    
     <nav>
         <div class="container nav-container">
+
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="menu-panel" id="menuPanel">
+                <a href="index.html">Accueil</a>
+                <a href="infos.html">Informations</a>
+                <a href="menu.html">Notre menu</a>
+                <a href="#Promotions">Promotions</a>
+                <a href="commande.html">Commander</a>
+                <a href="galerie.html">Galerie</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a class="nav-btn appointment-btn"><i class="fa-slab-press fa-regular fa-user"></i></a>
+                <a href="pannier.html" class="nav-btn appoint-btn"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+
             <div class="nav-brand">
-                <span class="brand-symbol"><i class="fa-solid fa-shirt"></i></span>
-                <h3 clrelass="brand-name">EMA & Restaurant</h3>
+                <!-- <span class="brand-symbol"><i class="fa-solid fa-shirt"></i></span> -->
+                <h3 class="brand-name">EMA & Restaurant</h3>
             </div>
 
             <ul class="nav-menu">
-                <li><a href="#heritage">STANDARD</a></li>
-                <li><a href="#collections">BANQUET</a></li>
-                <li><a href="#savoir-faire">VIP</a></li>
-                <!-- <li><a href="aproos.html">REUNION</a></li> -->
+                 <li><a href="">Restaurant</p></a></li>
             </ul>
-
-            <div class="nav-actions">
-                <button class="nav-btn search-btn" aria-label="Recherche"></button>
-                <button class="nav-btn appointment-btn"><i class="fa-solid fa-message"></i></button>
-                <a href="pannier.html" class="nav-btn appoint-btn"><i class="fas fa-shopping-cart"></i></a>
-            </div>
     </nav>
 
     <!-- Hero Section avec Carrousel d'Ambiance -->
@@ -1205,8 +1219,8 @@
         </div>
     </section>
 
-    <!-- les boissons -->
-    <section id="heritage"> 
+    <!-- Promotions -->
+    <section id="Promotions"> 
         <div class="container-sold">
             <div class="menu-category">
                 <h3 class="category-promo">Promotions</h3>

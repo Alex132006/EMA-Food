@@ -259,7 +259,7 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    /* top: 0px; */
+    top: px;
 }
 
 .nav-brand {
@@ -276,10 +276,12 @@ body {
 
 .brand-name {
     font-family: var(--font-display);
-    font-size: 25px;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    color: #ffffff;
+    font-size: 16px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    position: relative;
+    top: 15px;
+    color: #000000;
 }
 
 .about-section,
@@ -296,8 +298,8 @@ body {
 
 .nav-menu a {
     text-decoration: none;
-    color: #525252;
-    font-size: 0.9rem;
+    color: #a17415;
+    font-size: 15px;
     font-weight: 400;
     letter-spacing: 0.3px;
     transition: color 0.3s ease;
@@ -305,7 +307,7 @@ body {
 }
 
 .nav-menu a:hover {
-    color: var(--color-gold);
+    color: #00000000;
 }
 
 .nav-menu a::after {
@@ -324,11 +326,12 @@ body {
 }
 
 .nav-actions {
-    position: sticky;
-    top: 0%;
+    position: absolute;
+    top: 20px;
+    right: 4%;
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .nav-btn {
@@ -351,32 +354,31 @@ body {
 
 .appointment-btn {
     text-decoration: none;
-    background: var(--color-charcoal);
-    color: var(--color-ivory);
-    padding: 0.3rem 1rem;
+    background: rgba(0, 0, 0, 0);
+    color: rgb(2, 2, 2);
     border-radius: 15px 15px;
     font-weight: 400;
     letter-spacing: 0.3px;
 }
 
 .appointment-btn:hover {
-    background: var(--color-gold);
+    color: var(--color-gold);
     transform: translateY(-1px);
 }
 
 
 .appoint-btn {
     text-decoration: none;
-    background: var(--color-charcoal);
-    color: var(--color-ivory);
-    padding: 0.3rem 1rem;
-    border-radius:  15px  15px;
+    background: rgba(254, 0, 0, 0);
+    color: #020202;
+    left: 120px;
+    border-radius: 15px 15px;
     font-weight: 400;
     letter-spacing: 0.3px;
 }
 
 .appoint-btn:hover {
-    background: var(--color-gold);
+    color: var(--color-gold);
     transform: translateY(-1px);
 }
 /* Hero Section Luxueuse */
