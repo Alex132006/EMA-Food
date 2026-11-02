@@ -136,9 +136,10 @@
     box-shadow: 0 0 5px 5px #ffee0000;
 }
 
+/* L'image qui tourne en boucle */
 .carousel-track {
-    display: flex;
-    animation: defilement 30s linear infinite;
+    display: contents;
+    /* animation: defilement 30s linear infinite; */
     gap: 10px;
 }
 
