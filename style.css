@@ -328,7 +328,7 @@ body {
 .nav-actions {
     position: absolute;
     top: 20px;
-    right: 5%;
+    right: 8%;
     display: flex;
     align-items: center;
     gap: 1rem;
