@@ -328,10 +328,10 @@ body {
 .nav-actions {
     position: absolute;
     top: 20px;
-    right: 8%;
+    right: 6%;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 20px;
 }
 
 .nav-btn {
